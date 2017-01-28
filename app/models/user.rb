@@ -11,7 +11,7 @@ class User
  attr_accessor :password_confirmation
 
  property :id,    Serial
- property :email, String
+ property :email, String, :required => true, :format => :email_address, :unique => true
  property :password_digest, Text
 
  def password=(password)
@@ -19,6 +19,7 @@ class User
    self.password_digest = BCrypt::Password.create(password)
  end
 
+ validates_presence_of :email
  validates_confirmation_of :password
 
 end

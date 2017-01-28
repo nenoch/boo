@@ -1,7 +1,7 @@
 <form action="/users" method="post">
   SIGN UP
   <label for="email">email</label>
-    <input type="text" name="email" value='<%= @user.email %>' >
+    <input type="email" name="email" value="<%= @user.email %>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
   <label for="password">password</label>
     <input type="password" name="password">
     <label for="password confirmation">password confirmation</label>

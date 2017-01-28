@@ -54,7 +54,7 @@ class Bookmark < Sinatra::Base
   post '/users' do
     @user = User.create(email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
     if @user.id == nil
-      flash.now[:error] = "Password and confirmation password do not match"
+      flash.now[:errors] = @user.errors.full_messages
       erb :'users/new'
     else
       session[:user_id] = @user.id
