@@ -3,6 +3,7 @@ ENV['RACK_ENV'] = 'test'
 require './app/models/link'
 require './app/models/tag'
 require './app/models/user'
+require 'web_helpers'
 
 
 

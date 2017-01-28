@@ -4,7 +4,7 @@
 
 feature '5. add multiple tags' do
   scenario 'a user would like to add multiple tags to the links in their bookmark manager' do
-    User.create(email: 'luis@makers.com', password: 'makers2017')
+    sign_up
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

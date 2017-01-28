@@ -4,7 +4,7 @@
 
 feature '3. add tags to link' do
   scenario 'a user would like to tag links in her bookmark manager' do
-    User.create(email: 'luis@makers.com', password: 'makers2017')
+    sign_up
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

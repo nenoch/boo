@@ -6,8 +6,7 @@ require './app/models/user'
 
 feature '4. filtering by tag' do
   scenario 'a user would like to filter links by their tags' do
-    user = User.create(email: 'luis@makers.com', password: 'makers2017')
-    allow(user).to receive(:email) { 'luis@makers.com' }
+    sign_up
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

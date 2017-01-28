@@ -4,7 +4,7 @@
 
   feature '1. see a list of links on the homepage' do
     scenario 'list links' do
-        User.create(email: 'luis@makers.com', password: 'makers2017')
+        sign_up
         Link.create(title: "google", url: "www.google.com")
         visit '/links'
         within('ul#links') do
