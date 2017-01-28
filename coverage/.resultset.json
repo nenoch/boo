@@ -26,7 +26,6 @@
         6,
         6,
         null,
-        null,
         5,
         null,
         null,
@@ -43,7 +42,6 @@
       "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/app/data_mapper_setup.rb": [
         1,
         1,
-        null,
         null,
         1,
         1,
@@ -147,6 +145,6 @@
         null
       ]
     },
-    "timestamp": 1485451784
+    "timestamp": 1485596353
   }
 }

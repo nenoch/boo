@@ -22,7 +22,6 @@ class Bookmark < Sinatra::Base
       link.tags << Tag.first_or_create(name: tag)
       link.save
     end
-
     redirect '/links'
   end
 
