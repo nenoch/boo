@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/app/bookmark.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/app/bookmark.rb": [
         1,
         null,
         1,
@@ -61,7 +61,7 @@
         1,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/app/data_mapper_setup.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/app/data_mapper_setup.rb": [
         1,
         1,
         null,
@@ -75,7 +75,7 @@
         1,
         1
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/add_tags_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/add_tags_spec.rb": [
         null,
         null,
         null,
@@ -94,7 +94,7 @@
         null,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/creating_links_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/creating_links_spec.rb": [
         null,
         1,
         1,
@@ -109,7 +109,7 @@
         null,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/feature_tests_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/feature_tests_spec.rb": [
         null,
         null,
         null,
@@ -125,7 +125,7 @@
         null,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/filtering_by_tag_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/filtering_by_tag_spec.rb": [
         1,
         null,
         null,
@@ -153,7 +153,7 @@
         null,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/multiple_tags_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/multiple_tags_spec.rb": [
         null,
         null,
         null,
@@ -171,7 +171,7 @@
         null,
         null
       ],
-      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/Bookmark-manager/spec/features/sign_up_spec.rb": [
+      "/Users/IreneCanuti/Maker_Projects/bookmark_manager_Wedn/bookmark-manager/spec/features/sign_up_spec.rb": [
         null,
         null,
         1,
@@ -184,6 +184,6 @@
         null
       ]
     },
-    "timestamp": 1485605559
+    "timestamp": 1485605826
   }
 }
