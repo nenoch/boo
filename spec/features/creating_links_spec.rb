@@ -1,6 +1,7 @@
 
 feature '2. add a link' do
   scenario 'add the site address and title to my bookmark manager' do
+    User.create(email: 'luis@makers.com', password: 'makers2017')
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')

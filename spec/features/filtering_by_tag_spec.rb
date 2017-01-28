@@ -1,9 +1,13 @@
+require './app/models/user'
+
 # As a time-pressed user
 # So that I can quickly find links on a particular topic
 # I would like to filter links by tag
 
-feature '4.filtering by tag' do
+feature '4. filtering by tag' do
   scenario 'a user would like to filter links by their tags' do
+    user = User.create(email: 'luis@makers.com', password: 'makers2017')
+    allow(user).to receive(:email) { 'luis@makers.com' }
     visit '/links'
     click_button('Add Link')
     fill_in(:title, with: 'Facebook')
@@ -18,10 +22,6 @@ feature '4.filtering by tag' do
     click_button('Save')
 
     visit '/tags/bubbles'
-
     expect(page).to have_content("www.bubbles.com")
-
-    # links = Link.all
-    # expect(links.each { |x| x.tags.map(&:name) } ).to include('Bubbles')
   end
 end

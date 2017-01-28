@@ -9,6 +9,7 @@ class Bookmark < Sinatra::Base
 
   get '/links' do
     @links = Link.all
+    @user = User.first
     erb :'links/index'
   end
 
@@ -28,7 +29,19 @@ class Bookmark < Sinatra::Base
   get '/tags/:name' do |n|
     tag_name = n.gsub('_', ' ').split.map(&:capitalize).join(' ')
     @links = Tag.all(name: tag_name ).links
+    @user = User.first
     erb :'links/index'
+    # redirect '/links'
+
+  end
+
+  get '/links/signup' do
+    erb :'links/signup'
+  end
+
+  post '/links/signup' do
+    user = User.create(email: params[:email], password: params[:password])
+    redirect '/links'
   end
 
   # start the server if ruby file executed directly
