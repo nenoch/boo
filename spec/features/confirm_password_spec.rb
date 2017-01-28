@@ -3,4 +3,10 @@ feature '7. confirm password' do
     mismatch_sign_up
     expect { mismatch_sign_up }.to_not change(User, :count)
   end
+
+  scenario 'gives back an error message giving the user the possibility to sign up again' do
+    mismatch_sign_up
+    expect(page.current_path).to eq '/users'
+    expect(page).to have_content("Password and confirmation password do not match")
+  end
 end
