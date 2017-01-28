@@ -11,8 +11,9 @@ class Bookmark < Sinatra::Base
   # set :environment, :development - different way of setting an environment to default mode
 
   helpers do
-  def current_user
-    @current_user ||= User.get(session[:user_id])  end
+    def current_user
+      @current_user ||= User.get(session[:user_id])
+    end
   end
 
   get '/links' do
@@ -48,7 +49,7 @@ class Bookmark < Sinatra::Base
   end
 
   post '/users' do
-    user = User.create(email: params[:email], password: params[:password])
+    user = User.create(email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
     session[:user_id] = user.id
     redirect '/links'
   end
