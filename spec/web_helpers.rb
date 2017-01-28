@@ -12,4 +12,12 @@ def mismatch_sign_up
   fill_in :password, with: 'maker2017'
   fill_in :password_confirmation, with: 'marker2017'
   click_button('Sign Up')
+
+  def sign_in(email:, password:)
+    visit '/sessions/new'
+    fill_in :email, with: email
+    fill_in :password, with: password
+    click_button 'Sign in'
+  end
+  
 end
